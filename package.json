@@ -1,0 +1,42 @@
+{
+  "name": "spigot-anti-piracy-csv-exporter",
+  "version": "0.1.0",
+  "description": "A helper utility to generate a csv export for the spigot-anti-piracy-backend",
+  "bin": "./lib/csv-exporter.js",
+  "main": "./lib/csv-exporter.js",
+  "scripts": {
+    "lint": "eslint  .",
+    "prepublish": "npm run lint",
+    "start": "node lib/csv-exporter.js"
+  },
+  "engines": {
+    "node": ">=6.1"
+  },
+  "author": {
+    "name": "xGhOsTkiLLeRx"
+  },
+  "dependencies": {
+    "json2csv": "^3.4.2"
+  },
+  "devDependencies": {
+    "cz-customizable": "~4.0.0",
+    "eslint": "~2.10.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "repository": "timbru31/spigot-anti-piracy-csv-exporter",
+  "bugs": {
+    "url": "https://github.com/timbru31/spigot-anti-piracy-csv-exporter/issues"
+  },
+  "keywords": [
+    "spigot",
+    "bukkit",
+    "minecraft",
+    "ban",
+    "leak"
+  ]
+}
