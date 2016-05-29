@@ -3,6 +3,7 @@
 [![Dependency Status](https://david-dm.org/timbru31/spigot-anti-piracy-csv-exporter.svg)](https://david-dm.org/timbru31/spigot-anti-piracy-csv-exporter)
 [![devDependency Status](https://david-dm.org/timbru31/spigot-anti-piracy-csv-exporter/dev-status.svg)](https://david-dm.org/timbru31/spigot-anti-piracy-csv-exporter#info=devDependencies)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-blue.svg)](LICENSE.md)
 [![npm](https://img.shields.io/npm/v/spigot-anti-piracy-csv-exporter.svg)](https://www.npmjs.com/package/spigot-anti-piracy-csv-exporter)
 
 #### A helper utility to generate a csv export for the spigot-anti-piracy-backend
