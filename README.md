@@ -53,8 +53,6 @@ $ npm run lint
 The code is linted using `ESLint`.
 Keep the warnings to zero. :smile:
 
-Please make sure they all pass and add new ones when you develop new stuff! :smile:
-
 **Please follow the commitizen style when making new commits!**
 
 The project is written using bleeding edge software. I'm trying my best to keep it updated.

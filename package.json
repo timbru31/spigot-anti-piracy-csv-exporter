@@ -5,6 +5,7 @@
   "bin": "./lib/csv-exporter.js",
   "main": "./lib/csv-exporter.js",
   "scripts": {
+    "changelog": "conventional-changelog -i CHANGELOG.md -s -r 0 -p eslint",
     "lint": "eslint  .",
     "prepublish": "npm run lint",
     "start": "node lib/csv-exporter.js"
@@ -16,9 +17,11 @@
     "name": "xGhOsTkiLLeRx"
   },
   "dependencies": {
-    "json2csv": "^3.4.2"
+    "json2csv": "~3.4.2"
   },
   "devDependencies": {
+    "conventional-changelog": "~1.1.0",
+    "conventional-changelog-cli": "^1.2.0",
     "cz-customizable": "~4.0.0",
     "eslint": "~2.10.2"
   },
