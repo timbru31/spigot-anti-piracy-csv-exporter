@@ -43,10 +43,10 @@ $ npm run start
 
 Configuration via enviorment variables
 
-| Enviroment Variable | Default | Description |
-|:------------- |:------------- |:----- |
-| CSV_FILE | ./users.csv | Output CSV file |
-| LOG_FILE | ./request.log | Log file of requests |
+| Enviroment Variable | Default       | Description          |
+|:------------------- |:------------- |:-------------------- |
+| CSV_FILE            | ./users.csv   | Output CSV file      |
+| LOG_FILE            | ./request.log | Log file of requests |
 
 ### Development
 
