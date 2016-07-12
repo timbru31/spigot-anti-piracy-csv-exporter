@@ -1,6 +1,6 @@
 {
   "name": "spigot-anti-piracy-csv-exporter",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A helper utility to generate a csv export for the spigot-anti-piracy-backend",
   "bin": "./lib/csv-exporter.js",
   "main": "./lib/csv-exporter.js",
@@ -11,19 +11,19 @@
     "start": "node lib/csv-exporter.js"
   },
   "engines": {
-    "node": ">=6.1"
+    "node": ">=6"
   },
   "author": {
     "name": "xGhOsTkiLLeRx"
   },
   "dependencies": {
-    "json2csv": "~3.5.0"
+    "json2csv": "~3.6.1"
   },
   "devDependencies": {
     "conventional-changelog": "~1.1.0",
     "conventional-changelog-cli": "~1.2.0",
     "cz-customizable": "~4.0.0",
-    "eslint": "~2.13.1"
+    "eslint": "~3.0.1"
   },
   "config": {
     "commitizen": {
