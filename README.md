@@ -14,7 +14,7 @@ The helper application reduces the logfile of spigot-anti-piracy-backend to a CS
 
 ### Installation
 
-This has been tested with Node v6.2
+This has been tested with Node v6.2 up to 7.2
 
 #### Normal Installation
 

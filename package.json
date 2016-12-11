@@ -6,7 +6,7 @@
   "main": "./lib/csv-exporter.js",
   "scripts": {
     "changelog": "conventional-changelog -i CHANGELOG.md -s -r 0 -p eslint",
-    "lint": "eslint  .",
+    "lint": "eslint .",
     "prepublish": "npm run lint",
     "start": "node lib/csv-exporter.js"
   },
