@@ -17,13 +17,13 @@
     "name": "xGhOsTkiLLeRx"
   },
   "dependencies": {
-    "json2csv": "~3.7.2"
+    "json2csv": "~3.7.3"
   },
   "devDependencies": {
     "conventional-changelog": "~1.1.0",
     "conventional-changelog-cli": "~1.2.0",
     "cz-customizable": "~4.0.0",
-    "eslint": "~3.13.1"
+    "eslint": "~3.14.0"
   },
   "config": {
     "commitizen": {
