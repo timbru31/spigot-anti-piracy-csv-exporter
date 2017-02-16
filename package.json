@@ -8,6 +8,7 @@
     "changelog": "conventional-changelog -i CHANGELOG.md -s -r 0 -p eslint",
     "lint": "eslint .",
     "prepublish": "npm run lint",
+    "release": "standard-version",
     "start": "node lib/csv-exporter.js"
   },
   "engines": {
@@ -23,7 +24,8 @@
     "conventional-changelog": "~1.1.0",
     "conventional-changelog-cli": "~1.2.0",
     "cz-customizable": "~4.0.0",
-    "eslint": "~3.15.0"
+    "eslint": "~3.15.0",
+    "standard-version": "~4.0.0"
   },
   "config": {
     "commitizen": {
