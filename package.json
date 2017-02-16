@@ -14,7 +14,7 @@
     "node": ">=6"
   },
   "author": {
-    "name": "xGhOsTkiLLeRx"
+    "name": "timbru"
   },
   "dependencies": {
     "json2csv": "~3.7.3"
@@ -30,7 +30,7 @@
       "path": "node_modules/cz-customizable"
     }
   },
-  "license": "CC-BY-NC-SA-4.0",
+  "license": "MIT",
   "repository": "timbru31/spigot-anti-piracy-csv-exporter",
   "bugs": {
     "url": "https://github.com/timbru31/spigot-anti-piracy-csv-exporter/issues"
