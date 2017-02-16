@@ -1,3 +1,22 @@
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/timbru31/spigot-anti-piracy-csv-exporter/compare/v0.1.1...v0.2.0) (2017-02-16)
+
+
+### Bug Fixes
+
+* add missing semicolon ([440ad22](https://github.com/timbru31/spigot-anti-piracy-csv-exporter/commit/440ad22))
+
+
+### Features
+
+* add port to ip if present in request file ([5c1f78a](https://github.com/timbru31/spigot-anti-piracy-csv-exporter/commit/5c1f78a))
+
+
+
 <a name="0.1.3"></a>
 ## [0.1.3](https://github.com/timbru31/spigot-anti-piracy-csv-exporter/compare/v0.1.1...v0.1.3) (2016-10-07)
 
@@ -56,6 +75,3 @@
 
 * add CHANGELOG ([9d2f7d6e65bae0d9577187383b61961cd09a628c](https://github.com/timbru31/spigot-anti-piracy-csv-exporter/commit/9d2f7d6e65bae0d9577187383b61961cd09a628c))
 * initial commit ([2b5f30fc407efa36baaf0c42976648860651cc0a](https://github.com/timbru31/spigot-anti-piracy-csv-exporter/commit/2b5f30fc407efa36baaf0c42976648860651cc0a))
-
-
-
