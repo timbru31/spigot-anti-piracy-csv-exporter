@@ -2,13 +2,13 @@
   "name": "spigot-anti-piracy-csv-exporter",
   "version": "0.1.4",
   "description": "A helper utility to generate a csv export for the spigot-anti-piracy-backend",
-  "bin": "./lib/csv-exporter.js",
-  "main": "./lib/csv-exporter.js",
+  "bin": "./src/csv-exporter.js",
+  "main": "./src/csv-exporter.js",
   "scripts": {
     "lint": "eslint .",
     "prepublish": "npm run lint",
     "release": "standard-version",
-    "start": "node lib/csv-exporter.js"
+    "start": "node ./src/csv-exporter.js"
   },
   "engines": {
     "node": ">=6"
