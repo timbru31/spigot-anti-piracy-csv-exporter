@@ -10,11 +10,11 @@
 
 ### Description
 
-The helper application reduces the logfile of spigot-anti-piracy-backend to a CSV with unqiue user IDs and a count of different ips in order to determine which user could have leaked the resources.
+The helper application reduces the logfile of spigot-anti-piracy-backend to a CSV with unique user IDs and a count of different ips in order to determine which user could have leaked the resources.
 
 ### Installation
 
-This has been tested with Node v6.2 up to 7.5.0
+This has been tested with Node v6 LTS and Node v7
 
 #### Normal Installation
 
@@ -34,19 +34,19 @@ $ npm install
 
 ### Usage
 
-You need to specify thr path for the logfile. It defaults to `request.log` in the current directory if ommited.
+You need to specify thr path for the logfile. It defaults to `request.log` in the current directory if omitted.
 
 Just use
 ```shell
 $ npm run start
 ```
 
-Configuration via enviorment variables
+Configuration via environment variables
 
-| Enviroment Variable | Default       | Description          |
-|:------------------- |:------------- |:-------------------- |
-| CSV_FILE            | ./users.csv   | Output CSV file      |
-| LOG_FILE            | ./request.log | Log file of requests |
+| Environment Variable | Default       | Description          |
+|:-------------------- |:------------- |:-------------------- |
+| CSV_FILE             | ./users.csv   | Output CSV file      |
+| LOG_FILE             | ./request.log | Log file of requests |
 
 ### Development
 
