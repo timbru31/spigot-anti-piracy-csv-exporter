@@ -17,7 +17,7 @@
     "name": "timbru"
   },
   "dependencies": {
-    "json2csv": "~3.7.3"
+    "json2csv": "~3.8.0"
   },
   "devDependencies": {
     "cz-customizable": "~5.0.0",
