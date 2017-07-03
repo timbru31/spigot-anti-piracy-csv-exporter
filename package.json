@@ -21,8 +21,8 @@
   },
   "devDependencies": {
     "cz-customizable": "~5.0.0",
-    "eslint": "~4.1.0",
-    "standard-version": "~4.0.0"
+    "eslint": "~4.1.1",
+    "standard-version": "~4.2.0"
   },
   "config": {
     "commitizen": {

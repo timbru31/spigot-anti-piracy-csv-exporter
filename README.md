@@ -1,4 +1,5 @@
 # spigot-anti-piracy-csv-exporter
+[![Build Status](https://travis-ci.org/timbru31/spigot-anti-piracy-csv-exporter.svg?branch=master)](https://travis-ci.org/timbru31/spigot-anti-piracy-csv-exporter)
 [![Code Climate](https://codeclimate.com/github/timbru31/spigot-anti-piracy-csv-exporter/badges/gpa.svg)](https://codeclimate.com/github/timbru31/spigot-anti-piracy-csv-exporter)
 [![Dependency Status](https://david-dm.org/timbru31/spigot-anti-piracy-csv-exporter.svg)](https://david-dm.org/timbru31/spigot-anti-piracy-csv-exporter)
 [![devDependency Status](https://david-dm.org/timbru31/spigot-anti-piracy-csv-exporter/dev-status.svg)](https://david-dm.org/timbru31/spigot-anti-piracy-csv-exporter#info=devDependencies)
@@ -14,7 +15,7 @@ The helper application reduces the logfile of spigot-anti-piracy-backend to a CS
 
 ### Installation
 
-This has been tested with Node v6 LTS and Node v7
+This has been tested with Node v6 LTS and Node v8
 
 #### Normal Installation
 
