@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.1"></a>
+## [0.2.1](https://github.com/timbru31/spigot-anti-piracy-csv-exporter/compare/v0.2.0...v0.2.1) (2017-07-17)
+
+
+### Bug Fixes
+
+* **package:** update json2csv to version 3.8.0 (#10) ([1dafe1c](https://github.com/timbru31/spigot-anti-piracy-csv-exporter/commit/1dafe1c))
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/timbru31/spigot-anti-piracy-csv-exporter/compare/v0.1.1...v0.2.0) (2017-02-16)
 
