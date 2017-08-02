@@ -998,9 +998,9 @@ json-stringify-safe@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
 
-json2csv@3.10.0:
-  version "3.10.0"
-  resolved "https://registry.yarnpkg.com/json2csv/-/json2csv-3.10.0.tgz#4be4cdcf9711e76c57b9625bb79b759b3f2ca577"
+json2csv@3.11.0:
+  version "3.11.0"
+  resolved "https://registry.yarnpkg.com/json2csv/-/json2csv-3.11.0.tgz#e9837c6909722de831f18763d1e73856f422dff8"
   dependencies:
     cli-table "^0.3.1"
     commander "^2.8.1"
