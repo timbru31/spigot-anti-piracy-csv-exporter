@@ -20,7 +20,7 @@
     "json2csv": "~3.11.0"
   },
   "devDependencies": {
-    "cz-customizable": "~5.0.0",
+    "cz-customizable": "~5.1.0",
     "eslint": "~4.4.0",
     "standard-version": "~4.2.0"
   },
