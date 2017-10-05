@@ -2,16 +2,17 @@
   "name": "spigot-anti-piracy-csv-exporter",
   "version": "0.2.1",
   "description": "A helper utility to generate a csv export for the spigot-anti-piracy-backend",
-  "bin": "./src/csv-exporter.js",
-  "main": "./src/csv-exporter.js",
+  "bin": "dist/csv-exporter.js",
+  "main": "dist/csv-exporter.js",
+  "types": "dist/csv-exporter.d.ts",
   "scripts": {
-    "lint": "eslint .",
-    "prepublish": "npm run lint",
+    "lint": "tslint -p tsconfig.json -c tslint.json --type-check .",
+    "prepublish": "npm run lint && tsc",
     "release": "standard-version",
-    "start": "node ./src/csv-exporter.js"
+    "start": "ts-node src/csv-exporter.ts"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=8"
   },
   "author": {
     "name": "timbru"
@@ -20,9 +21,12 @@
     "json2csv": "~3.11.0"
   },
   "devDependencies": {
+    "@types/node": "^8.0.32",
     "cz-customizable": "~5.2.0",
-    "eslint": "~4.8.0",
-    "standard-version": "~4.2.0"
+    "standard-version": "~4.2.0",
+    "ts-node": "~3.3.0",
+    "tslint": "~5.7.0",
+    "typescript": "~2.5.3"
   },
   "config": {
     "commitizen": {

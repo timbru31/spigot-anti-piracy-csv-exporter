@@ -1,19 +1,32 @@
-const fs = require('fs');
-const readline = require('readline');
-const json2csv = require('json2csv');
+import { createReadStream, writeFile } from 'fs';
+import * as json2csv from 'json2csv';
+import { createInterface } from 'readline';
 
-const instream = fs.createReadStream(process.env.LOG_FILE || 'request.log');
-const rl = readline.createInterface({
+const instream = createReadStream(process.env.LOG_FILE || 'request.log');
+const rl = createInterface({
   input: instream,
   terminal: false
 });
 
-let rawLogEntires = [];
+interface IRawLogEntry {
+  userId: string;
+  ip: string;
+  port: string;
+  blacklisted: boolean;
+}
+
+interface IUser {
+  count: number;
+  ips: string[];
+  userId: string;
+}
+
+const rawLogEntires: IRawLogEntry[] = [];
 rl.on('line', line => rawLogEntires.push(JSON.parse(line)))
   .on('close', () => filterLogEntries());
 
 function filterLogEntries() {
-  const users = rawLogEntires.reduce((prev, curr) => {
+  const users: IUser[] = rawLogEntires.reduce((prev, curr) => {
     const userId = curr.userId;
     let ip = curr.ip;
     const port = curr.port;
@@ -37,29 +50,29 @@ function filterLogEntries() {
           return elem;
         });
       } else {
-        let newUser = {
-          userId,
+        const newUser: IUser = {
           count: 1,
-          ips: [ip]
+          ips: [ip],
+          userId
         };
         prev.push(newUser);
       }
     }
     return prev;
-  }, []);
+  }, [] as IUser[]);
 
   writeToCSV(users);
 }
 
-function writeToCSV(users) {
+function writeToCSV(users: IUser[]) {
   const fields = ['userId', 'count', 'ips'];
   json2csv({data: users, fields, del: ','}, (err, csv) => {
     if (err) {
       console.log(err);
     }
-    fs.writeFile(process.env.CSV_FILE || 'users.csv', csv, err => {
-      if (err) {
-        throw err;
+    writeFile(process.env.CSV_FILE || 'users.csv', csv, _err => {
+      if (_err) {
+        throw _err;
       }
       console.log(`Wrote ${users.length} user ids to the csv.`);
     });

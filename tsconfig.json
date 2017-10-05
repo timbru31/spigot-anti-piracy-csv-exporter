@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "outDir": "dist",
+    "removeComments": true,
+    "target": "es2015"
+  },
+  "include": [
+    "src/*.ts"
+  ]
+}
