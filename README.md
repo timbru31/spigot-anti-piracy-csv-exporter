@@ -18,7 +18,7 @@ The helper application reduces the logfile of spigot-anti-piracy-backend to a CS
 
 ### Installation
 
-This has been tested with Node v6 LTS and Node v8
+This has been tested with Node v8
 
 #### Normal Installation
 
@@ -59,7 +59,7 @@ To run the linter use
 $ npm run lint
 ```
 
-The code is linted using `ESLint`.
+The code is linted using `TSLint`.
 Keep the warnings to zero. :smile:
 
 **Please follow the commitizen style when making new commits!**
