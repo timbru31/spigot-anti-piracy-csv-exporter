@@ -1,6 +1,6 @@
 {
   "name": "spigot-anti-piracy-csv-exporter",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "A helper utility to generate a csv export for the spigot-anti-piracy-backend",
   "bin": "dist/csv-exporter.js",
   "main": "dist/csv-exporter.js",
