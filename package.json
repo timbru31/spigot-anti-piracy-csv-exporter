@@ -8,7 +8,7 @@
   "scripts": {
     "lint": "tslint -p tsconfig.json -c tslint.json --type-check .",
     "prepublish": "npm run lint && tsc",
-    "release": "standard-version",
+    "release": "tsc && standard-version",
     "start": "ts-node src/csv-exporter.ts"
   },
   "engines": {
