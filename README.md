@@ -1,4 +1,6 @@
 # spigot-anti-piracy-csv-exporter
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/timbru31/spigot-anti-piracy-csv-exporter.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/timbru31/spigot-anti-piracy-csv-exporter.svg?branch=master)](https://travis-ci.org/timbru31/spigot-anti-piracy-csv-exporter)
 
 [![Dependency Status](https://david-dm.org/timbru31/spigot-anti-piracy-csv-exporter.svg)](https://david-dm.org/timbru31/spigot-anti-piracy-csv-exporter)
