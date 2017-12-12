@@ -26,42 +26,56 @@ rl.on('line', line => rawLogEntires.push(JSON.parse(line)))
   .on('close', () => filterLogEntries());
 
 function filterLogEntries() {
-  const users: IUser[] = rawLogEntires.reduce((prev, curr) => {
-    const userId = curr.userId;
-    let ip = curr.ip;
-    const port = curr.port;
+  const users: IUser[] = rawLogEntires.reduce((_users, logEntry) => {
+    const userId = logEntry.userId;
+    let ip = logEntry.ip;
+    const port = logEntry.port;
     if (port) {
       ip += `:${port}`;
     }
-    const blacklisted = curr.blacklisted;
-    if (!prev) {
-      prev = [];
+    const blacklisted = logEntry.blacklisted;
+    if (!_users) {
+      _users = [];
     }
     if (userId && ip && !blacklisted) {
-      const included = prev.some(elem => elem.userId === userId);
-      if (included) {
-        prev = prev.map(elem => {
-          if (elem.userId === userId) {
-            const ips = new Set(elem.ips);
-            ips.add(ip);
-            elem.ips = Array.from(ips);
-            elem.count = ips.size;
-          }
-          return elem;
-        });
-      } else {
-        const newUser: IUser = {
-          count: 1,
-          ips: [ip],
-          userId
-        };
-        prev.push(newUser);
-      }
+      _users = processUserEntry(_users, userId, ip);
     }
-    return prev;
+    return _users;
   }, [] as IUser[]);
 
   writeToCSV(users);
+}
+
+function processUserEntry(users: IUser[], userId: string, ip: string) {
+  const included = users.some(elem => elem.userId === userId);
+  if (included) {
+    users = updateUser(users, userId, ip);
+  } else {
+    createNewUser(ip, userId, users);
+  }
+  return users;
+}
+
+function updateUser(users: IUser[], userId: string, ip: string) {
+  users = users.map(user => {
+    if (user.userId === userId) {
+      const ips = new Set(user.ips);
+      ips.add(ip);
+      user.ips = Array.from(ips);
+      user.count = ips.size;
+    }
+    return user;
+  });
+  return users;
+}
+
+function createNewUser(ip: string, userId: string, users: IUser[]) {
+  const newUser: IUser = {
+    count: 1,
+    ips: [ip],
+    userId
+  };
+  users.push(newUser);
 }
 
 function writeToCSV(users: IUser[]) {
