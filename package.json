@@ -6,7 +6,7 @@
   "main": "dist/csv-exporter.js",
   "types": "dist/csv-exporter.d.ts",
   "scripts": {
-    "lint": "tslint -p tsconfig.json -c tslint.json --type-check '{src,e2e}/**/*.ts'",
+    "lint": "tslint -p tsconfig.json -c tslint.json '{src,e2e}/**/*.ts'",
     "prepublish": "npm run lint && tsc",
     "release": "standard-version",
     "start": "ts-node src/csv-exporter.ts"
@@ -21,12 +21,12 @@
     "json2csv": "~3.11.5"
   },
   "devDependencies": {
-    "@types/node": "~8.0.47",
+    "@types/node": "~8.0.58",
     "cz-customizable": "~5.2.0",
     "standard-version": "~4.2.0",
     "ts-node": "~4.0.1",
     "tslint": "~5.8.0",
-    "typescript": "~2.6.1"
+    "typescript": "~2.6.2"
   },
   "config": {
     "commitizen": {
