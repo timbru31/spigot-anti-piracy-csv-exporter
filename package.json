@@ -21,7 +21,7 @@
     "json2csv": "~3.11.5"
   },
   "devDependencies": {
-    "@types/node": "~9.3.0",
+    "@types/node": "~9.4.0",
     "cz-customizable": "~5.2.0",
     "standard-version": "~4.3.0",
     "ts-node": "~4.1.0",
