@@ -1,5 +1,5 @@
 import { createReadStream, writeFile } from 'fs';
-import * as json2csv from 'json2csv';
+import JSON2CSVParser from 'json2csv/JSON2CSVParser';
 import { createInterface } from 'readline';
 
 const instream = createReadStream(process.env.LOG_FILE || 'request.log');
@@ -80,15 +80,16 @@ function createNewUser(ip: string, userId: string, users: IUser[]) {
 
 function writeToCSV(users: IUser[]) {
   const fields = ['userId', 'count', 'ips'];
-  json2csv({data: users, fields, del: ','}, (err, csv) => {
-    if (err) {
-      console.log(err);
-    }
+  try {
+    const parser = new JSON2CSVParser({fields, delimiter: ','});
+    const csv = parser.parse(users);
     writeFile(process.env.CSV_FILE || 'users.csv', csv, _err => {
       if (_err) {
         throw _err;
       }
       console.log(`Wrote ${users.length} user ids to the csv.`);
     });
-  });
+  } catch (err) {
+    console.error(err);
+  }
 }

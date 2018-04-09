@@ -15,6 +15,7 @@
       "allow-leading-underscore"
     ],
     "arrow-parens": false,
-    "no-console": false
+    "no-console": false,
+    "no-submodule-imports": false
   }
 }
