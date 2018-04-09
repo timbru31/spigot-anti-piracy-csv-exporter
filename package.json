@@ -18,7 +18,7 @@
     "name": "timbru"
   },
   "dependencies": {
-    "json2csv": "~3.11.5"
+    "json2csv": "~4.0.1"
   },
   "devDependencies": {
     "@types/node": "~9.6.0",
