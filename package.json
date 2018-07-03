@@ -9,7 +9,9 @@
     "lint": "tslint -p tsconfig.json -c tslint.json '{src,e2e}/**/*.ts'",
     "prepublish": "npm run lint && tsc",
     "release": "standard-version",
-    "start": "ts-node src/csv-exporter.ts"
+    "start": "ts-node src/csv-exporter.ts",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "engines": {
     "node": ">=8"
@@ -18,7 +20,8 @@
     "name": "timbru"
   },
   "dependencies": {
-    "json2csv": "^4.0.2"
+    "json2csv": "^4.0.2",
+    "snyk": "^1.88.0"
   },
   "devDependencies": {
     "@types/json2csv": "^4.0.1",
@@ -45,5 +48,6 @@
     "minecraft",
     "ban",
     "leak"
-  ]
+  ],
+  "snyk": true
 }
