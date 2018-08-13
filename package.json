@@ -20,17 +20,17 @@
     "name": "timbru"
   },
   "dependencies": {
-    "json2csv": "^4.0.2",
-    "snyk": "^1.88.0"
+    "json2csv": "^4.2.1",
+    "snyk": "^1.90.2"
   },
   "devDependencies": {
-    "@types/json2csv": "^4.0.1",
-    "@types/node": "^10.0.9",
+    "@types/json2csv": "^4.2.0",
+    "@types/node": "^10.5.8",
     "cz-customizable": "^5.2.0",
-    "standard-version": "^4.3.0",
-    "ts-node": "^7.0.0",
-    "tslint": "^5.9.1",
-    "typescript": "^2.8.1"
+    "standard-version": "^4.4.0",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.1"
   },
   "config": {
     "commitizen": {
