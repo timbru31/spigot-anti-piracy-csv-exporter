@@ -8,7 +8,7 @@
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![npm](https://img.shields.io/npm/v/spigot-anti-piracy-csv-exporter.svg)](https://www.npmjs.com/package/spigot-anti-piracy-csv-exporter)
+[![npm](https://img.shields.io/npm/v/spigot-anti-piracy-csv-exporter.svg)](https://www.npmjs.com/package/spigot-anti-piracy-csv-exporter) [![Greenkeeper badge](https://badges.greenkeeper.io/timbru31/spigot-anti-piracy-csv-exporter.svg)](https://greenkeeper.io/)
 
 #### A helper utility to generate a csv export for the spigot-anti-piracy-backend
 
