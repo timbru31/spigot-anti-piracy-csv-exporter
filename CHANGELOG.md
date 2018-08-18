@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/timbru31/spigot-anti-piracy-csv-exporter/compare/v1.0.0...v1.0.1) (2018-08-18)
+
+
+### Bug Fixes
+
+* .snyk & package.json to reduce vulnerabilities ([d5f5dba](https://github.com/timbru31/spigot-anti-piracy-csv-exporter/commit/d5f5dba))
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/timbru31/spigot-anti-piracy-csv-exporter/compare/v0.2.1...v1.0.0) (2017-10-09)
 
