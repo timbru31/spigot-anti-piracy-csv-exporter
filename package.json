@@ -26,16 +26,10 @@
   "devDependencies": {
     "@types/json2csv": "^4.2.0",
     "@types/node": "^10.12.17",
-    "cz-customizable": "^5.2.0",
     "standard-version": "^4.4.0",
     "ts-node": "^7.0.1",
     "tslint": "^5.11.0",
     "typescript": "^3.0.1"
-  },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-customizable"
-    }
   },
   "license": "MIT",
   "repository": "timbru31/spigot-anti-piracy-csv-exporter",

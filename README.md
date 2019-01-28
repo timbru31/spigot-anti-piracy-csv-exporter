@@ -65,8 +65,5 @@ Keep the warnings to zero. :smile:
 
 **Please follow the commitizen style when making new commits!**
 
-The project is written using bleeding edge software. I'm trying my best to keep it updated.
-[Greenkeeper](https://greenkeeper.io) is helping me to do so, by making pull request for dependency updates. Thanks for this great service! :rocket:
-
 ---
 Built by (c) Tim Brust and contributors. Released under the MIT license.
