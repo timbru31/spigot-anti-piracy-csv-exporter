@@ -7,7 +7,8 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/timbru31/spigot-anti-piracy-csv-exporter/badge.svg)](https://snyk.io/test/github/timbru31/spigot-anti-piracy-csv-exporter)
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=timbru31/spigot-anti-piracy-csv-exporter)](https://dependabot.com)[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=timbru31/spigot-anti-piracy-csv-exporter)](https://dependabot.com)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![npm](https://img.shields.io/npm/v/spigot-anti-piracy-csv-exporter.svg)](https://www.npmjs.com/package/spigot-anti-piracy-csv-exporter)
 
 #### A helper utility to generate a csv export for the spigot-anti-piracy-backend
