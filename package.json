@@ -9,9 +9,7 @@
     "lint": "tslint -p tsconfig.json -c tslint.json '{src,e2e}/**/*.ts'",
     "prepublish": "npm run lint && tsc",
     "release": "standard-version",
-    "start": "ts-node src/csv-exporter.ts",
-    "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "start": "ts-node src/csv-exporter.ts"
   },
   "engines": {
     "node": ">=8"
@@ -20,16 +18,15 @@
     "name": "timbru"
   },
   "dependencies": {
-    "json2csv": "^4.2.1",
-    "snyk": "^1.90.2"
+    "json2csv": "^4.3.3"
   },
   "devDependencies": {
     "@types/json2csv": "^4.2.0",
-    "@types/node": "^10.12.17",
+    "@types/node": "^10.12.18",
     "standard-version": "^4.4.0",
-    "ts-node": "^7.0.1",
-    "tslint": "^5.11.0",
-    "typescript": "^3.0.1"
+    "ts-node": "^8.0.2",
+    "tslint": "^5.12.1",
+    "typescript": "^3.2.4"
   },
   "license": "MIT",
   "repository": "timbru31/spigot-anti-piracy-csv-exporter",
@@ -42,6 +39,5 @@
     "minecraft",
     "ban",
     "leak"
-  ],
-  "snyk": true
+  ]
 }
