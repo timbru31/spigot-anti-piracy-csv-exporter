@@ -6,4 +6,9 @@ npm-debug.log
 *.log
 coverage/
 *.csv
-dist/
+.node-version
+.editorconfig
+.travis.yml
+tsconfig.json
+tslint.json
+.github/
