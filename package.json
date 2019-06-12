@@ -7,7 +7,7 @@
   "types": "dist/csv-exporter.d.ts",
   "scripts": {
     "lint": "tslint -p tsconfig.json -c tslint.json '{src,e2e}/**/*.ts'",
-    "prepublish": "npm run lint && tsc",
+    "prepublishOnly": "npm run lint && tsc",
     "release": "standard-version",
     "start": "ts-node src/csv-exporter.ts"
   },
