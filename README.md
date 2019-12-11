@@ -1,4 +1,5 @@
 # spigot-anti-piracy-csv-exporter
+
 [![Build Status](https://travis-ci.org/timbru31/spigot-anti-piracy-csv-exporter.svg?branch=master)](https://travis-ci.org/timbru31/spigot-anti-piracy-csv-exporter)
 
 [![Dependency Status](https://david-dm.org/timbru31/spigot-anti-piracy-csv-exporter.svg)](https://david-dm.org/timbru31/spigot-anti-piracy-csv-exporter)
@@ -42,6 +43,7 @@ $ npm install
 You need to specify thr path for the logfile. It defaults to `request.log` in the current directory if omitted.
 
 Just use
+
 ```shell
 $ npm run start
 ```
@@ -49,13 +51,14 @@ $ npm run start
 Configuration via environment variables
 
 | Environment Variable | Default       | Description          |
-|:-------------------- |:------------- |:-------------------- |
+| :------------------- | :------------ | :------------------- |
 | CSV_FILE             | ./users.csv   | Output CSV file      |
 | LOG_FILE             | ./request.log | Log file of requests |
 
 ### Development
 
 To run the linter use
+
 ```shell
 $ npm run lint
 ```
@@ -66,4 +69,5 @@ Keep the warnings to zero. :smile:
 **Please follow the commitizen style when making new commits!**
 
 ---
+
 Built by (c) Tim Brust and contributors. Released under the MIT license.
