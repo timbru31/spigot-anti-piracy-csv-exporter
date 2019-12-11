@@ -2,18 +2,8 @@
   "extends": ["tslint:latest"],
   "rules": {
     "no-floating-promises": true,
-    "no-var-requires": false,
-    "quotemark": [
-      true,
-      "single"
-    ],
-    "trailing-comma": [
-      false
-    ],
-    "variable-name": [
-      true,
-      "allow-leading-underscore"
-    ],
+    "trailing-comma": [false],
+    "variable-name": [true, "allow-leading-underscore"],
     "arrow-parens": false,
     "no-console": false,
     "no-submodule-imports": false

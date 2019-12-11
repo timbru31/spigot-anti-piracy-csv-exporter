@@ -1,8 +1,8 @@
-import { createReadStream, writeFile } from 'fs';
-import JSON2CSVParser from 'json2csv/JSON2CSVParser';
-import { createInterface } from 'readline';
+import { createReadStream, writeFile } from "fs";
+import JSON2CSVParser from "json2csv/JSON2CSVParser";
+import { createInterface } from "readline";
 
-const instream = createReadStream(process.env.LOG_FILE || 'request.log');
+const instream = createReadStream(process.env.LOG_FILE || "request.log");
 const rl = createInterface({
   input: instream,
   terminal: false
@@ -22,8 +22,9 @@ interface IUser {
 }
 
 const rawLogEntires: IRawLogEntry[] = [];
-rl.on('line', line => rawLogEntires.push(JSON.parse(line)))
-  .on('close', () => filterLogEntries());
+rl.on("line", line => rawLogEntires.push(JSON.parse(line))).on("close", () =>
+  filterLogEntries()
+);
 
 function filterLogEntries() {
   const users: IUser[] = rawLogEntires.reduce((_users, logEntry) => {
@@ -79,11 +80,11 @@ function createNewUser(ip: string, userId: string, users: IUser[]) {
 }
 
 function writeToCSV(users: IUser[]) {
-  const fields = ['userId', 'count', 'ips'];
+  const fields = ["userId", "count", "ips"];
   try {
-    const parser = new JSON2CSVParser({fields, delimiter: ','});
+    const parser = new JSON2CSVParser({ fields, delimiter: "," });
     const csv = parser.parse(users);
-    writeFile(process.env.CSV_FILE || 'users.csv', csv, _err => {
+    writeFile(process.env.CSV_FILE || "users.csv", csv, _err => {
       if (_err) {
         throw _err;
       }
