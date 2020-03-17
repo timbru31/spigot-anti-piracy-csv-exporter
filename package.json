@@ -18,7 +18,7 @@
     "name": "timbru"
   },
   "dependencies": {
-    "json2csv": "^4.5.4"
+    "json2csv": "^5.0.0"
   },
   "devDependencies": {
     "@types/json2csv": "^4.5.0",
