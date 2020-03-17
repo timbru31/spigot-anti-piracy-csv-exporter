@@ -21,12 +21,12 @@
     "json2csv": "^5.0.0"
   },
   "devDependencies": {
-    "@types/json2csv": "^4.5.0",
-    "@types/node": "^12.12.17",
-    "standard-version": "^7.0.1",
-    "ts-node": "^8.5.4",
-    "tslint": "^6.0.0",
-    "typescript": "^3.7.3"
+    "@types/json2csv": "^4.5.1",
+    "@types/node": "^12.12.30",
+    "standard-version": "^7.1.0",
+    "ts-node": "^8.6.2",
+    "tslint": "^6.1.0",
+    "typescript": "^3.8.3"
   },
   "license": "MIT",
   "repository": "timbru31/spigot-anti-piracy-csv-exporter",
