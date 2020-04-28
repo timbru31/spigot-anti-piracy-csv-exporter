@@ -18,14 +18,14 @@
     "name": "timbru"
   },
   "dependencies": {
-    "json2csv": "^5.0.0"
+    "json2csv": "^5.0.1"
   },
   "devDependencies": {
     "@types/json2csv": "^5.0.0",
     "@types/node": "^12.12.30",
     "standard-version": "^7.1.0",
-    "ts-node": "^8.6.2",
-    "tslint": "^6.1.0",
+    "ts-node": "^8.9.1",
+    "tslint": "^6.1.2",
     "typescript": "^3.8.3"
   },
   "license": "MIT",
