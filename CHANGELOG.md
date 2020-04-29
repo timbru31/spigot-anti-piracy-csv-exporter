@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/timbru31/spigot-anti-piracy-csv-exporter/compare/v1.1.0...v1.2.0) (2020-04-29)
+
+
+### Features
+
+* hardens TS configs ([1ae47e4](https://github.com/timbru31/spigot-anti-piracy-csv-exporter/commit/1ae47e40f75a361dfe1491bc1b2997d78f9a5b11))
+
 ## [1.1.0](https://github.com/timbru31/spigot-anti-piracy-csv-exporter/compare/v1.0.3...v1.1.0) (2020-03-17)
 
 
