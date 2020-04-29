@@ -5,9 +5,13 @@
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
+    "strictNullChecks": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
     "outDir": "dist",
     "removeComments": true,
-    "target": "es2018"
+    "target": "ES2020"
   },
   "include": [
     "src/*.ts"
