@@ -7,7 +7,7 @@
 [![Code Climate](https://codeclimate.com/github/timbru31/spigot-anti-piracy-csv-exporter/badges/gpa.svg)](https://codeclimate.com/github/timbru31/spigot-anti-piracy-csv-exporter)
 [![Known Vulnerabilities](https://snyk.io/test/github/timbru31/spigot-anti-piracy-csv-exporter/badge.svg)](https://snyk.io/test/github/timbru31/spigot-anti-piracy-csv-exporter)
 
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](https://commitizen.github.io/cz-cli/)
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=timbru31/spigot-anti-piracy-csv-exporter)](https://dependabot.com)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![npm](https://img.shields.io/npm/v/spigot-anti-piracy-csv-exporter.svg)](https://www.npmjs.com/package/spigot-anti-piracy-csv-exporter)
@@ -20,7 +20,7 @@ The helper application reduces the logfile of spigot-anti-piracy-backend to a CS
 
 ### Installation
 
-This has been tested with Node.js v12 LTS.
+This has been tested with Node.js v12 and v14 LTS.
 
 #### Normal Installation
 
