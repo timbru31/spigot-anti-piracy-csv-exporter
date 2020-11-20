@@ -1,6 +1,7 @@
 # spigot-anti-piracy-csv-exporter
 
-[![Build Status](https://travis-ci.org/timbru31/spigot-anti-piracy-csv-exporter.svg?branch=master)](https://travis-ci.org/timbru31/spigot-anti-piracy-csv-exporter)
+[![Run a security audit](https://github.com/timbru31/spigot-anti-piracy-csv-exporter/workflows/Run%20a%20security%20audit/badge.svg)](https://github.com/timbru31/spigot-anti-piracy-csv-exporter/actions?query=workflow%3A%22Run+a+security+audit%22)
+[![Linting](https://github.com/timbru31/spigot-anti-piracy-csv-exporter/workflows/Linting/badge.svg)](https://github.com/timbru31/spigot-anti-piracy-csv-exporter/actions?query=workflow%3ALinting)
 
 [![Dependency Status](https://david-dm.org/timbru31/spigot-anti-piracy-csv-exporter.svg)](https://david-dm.org/timbru31/spigot-anti-piracy-csv-exporter)
 [![devDependency Status](https://david-dm.org/timbru31/spigot-anti-piracy-csv-exporter/dev-status.svg)](https://david-dm.org/timbru31/spigot-anti-piracy-csv-exporter#info=devDependencies)
