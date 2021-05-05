@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@types/json2csv": "^5.0.0",
-    "@types/node": "^12.12.30",
+    "@types/node": "^15.0.2",
     "prettier": "^2.0.5",
     "standard-version": "^9.0.0",
     "ts-node": "^9.0.0",
