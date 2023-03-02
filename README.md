@@ -3,8 +3,7 @@
 [![Run a security audit](https://github.com/timbru31/spigot-anti-piracy-csv-exporter/workflows/Run%20a%20security%20audit/badge.svg)](https://github.com/timbru31/spigot-anti-piracy-csv-exporter/actions?query=workflow%3A%22Run+a+security+audit%22)
 [![Linting](https://github.com/timbru31/spigot-anti-piracy-csv-exporter/workflows/Linting/badge.svg)](https://github.com/timbru31/spigot-anti-piracy-csv-exporter/actions?query=workflow%3ALinting)
 
-[![Dependency Status](https://david-dm.org/timbru31/spigot-anti-piracy-csv-exporter.svg)](https://david-dm.org/timbru31/spigot-anti-piracy-csv-exporter)
-[![devDependency Status](https://david-dm.org/timbru31/spigot-anti-piracy-csv-exporter/dev-status.svg)](https://david-dm.org/timbru31/spigot-anti-piracy-csv-exporter#info=devDependencies)
+[![dependency Status](https://img.shields.io/librariesio/release/npm/spigot-anti-piracy-csv-exporter)](https://github.com/timbru31/spigot-anti-piracy-csv-exporter/network/dependencies)
 [![Code Climate](https://codeclimate.com/github/timbru31/spigot-anti-piracy-csv-exporter/badges/gpa.svg)](https://codeclimate.com/github/timbru31/spigot-anti-piracy-csv-exporter)
 [![Known Vulnerabilities](https://snyk.io/test/github/timbru31/spigot-anti-piracy-csv-exporter/badge.svg)](https://snyk.io/test/github/timbru31/spigot-anti-piracy-csv-exporter)
 
@@ -21,7 +20,7 @@ The helper application reduces the logfile of spigot-anti-piracy-backend to a CS
 
 ### Installation
 
-This has been tested with Node.js v12 and v14 LTS.
+This has been tested with Node.js v18 LTS.
 
 #### Normal Installation
 
@@ -64,7 +63,7 @@ To run the linter use
 $ npm run lint
 ```
 
-The code is linted using `TSLint`.
+The code is linted using `ESLint`.
 Keep the warnings to zero. :smile:
 
 **Please follow the commitizen style when making new commits!**
