@@ -23,7 +23,7 @@
   "devDependencies": {
     "@types/json2csv": "^5.0.3",
     "@types/node": "^18.14.4",
-    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/eslint-plugin": "^6.2.0",
     "@typescript-eslint/parser": "^5.54.0",
     "eslint": "^8.34.0",
     "eslint-plugin-prettier": "^4.2.1",
