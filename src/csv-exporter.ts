@@ -22,8 +22,9 @@ interface IUser {
 }
 
 const rawLogEntires: IRawLogEntry[] = [];
-rl.on('line', line => rawLogEntires.push(JSON.parse(line))).on('close', () =>
-  filterLogEntries()
+rl.on('line', line => rawLogEntires.push(JSON.parse(line) as IRawLogEntry)).on(
+  'close',
+  () => filterLogEntries(),
 );
 
 function filterLogEntries() {
