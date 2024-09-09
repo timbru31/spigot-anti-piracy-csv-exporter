@@ -15,11 +15,11 @@
 
 ### Description
 
-The helper application reduces the logfile of spigot-anti-piracy-backend to a CSV with unique user IDs and a count of different ips in order to determine which user could have leaked the resources.
+The helper application reduces the log file of spigot-anti-piracy-backend to a CSV with unique user IDs and a count of different ips in order to determine which user could have leaked the resources.
 
 ### Installation
 
-This has been tested with Node.js v18 LTS.
+This has been tested with Node.js v20 LTS.
 
 #### Normal Installation
 
