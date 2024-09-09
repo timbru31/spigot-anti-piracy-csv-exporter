@@ -1,9 +1,8 @@
-import { Parser } from 'json2csv';
+import { Parser } from '@json2csv/plainjs';
 import { createReadStream, writeFile } from 'node:fs';
 import { createInterface } from 'readline';
 
 const instream = createReadStream(process.env.LOG_FILE ?? 'request.log');
-
 const rl = createInterface({
   input: instream,
   terminal: false,
