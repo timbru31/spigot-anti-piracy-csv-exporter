@@ -1,8 +1,9 @@
-import { createReadStream, writeFile } from 'fs';
 import { Parser } from 'json2csv';
+import { createReadStream, writeFile } from 'node:fs';
 import { createInterface } from 'readline';
 
-const instream = createReadStream(process.env.LOG_FILE || 'request.log');
+const instream = createReadStream(process.env.LOG_FILE ?? 'request.log');
+
 const rl = createInterface({
   input: instream,
   terminal: false,
@@ -24,11 +25,13 @@ interface IUser {
 const rawLogEntires: IRawLogEntry[] = [];
 rl.on('line', line => rawLogEntires.push(JSON.parse(line) as IRawLogEntry)).on(
   'close',
-  () => filterLogEntries(),
+  () => {
+    filterLogEntries();
+  },
 );
 
 function filterLogEntries() {
-  const users: IUser[] = rawLogEntires.reduce((_users, logEntry) => {
+  const users: IUser[] = rawLogEntires.reduce<IUser[]>((_users, logEntry) => {
     const userId = logEntry.userId;
     let ip = logEntry.ip;
     const port = logEntry.port;
@@ -36,14 +39,11 @@ function filterLogEntries() {
       ip += `:${port}`;
     }
     const blacklisted = logEntry.blacklisted;
-    if (!_users) {
-      _users = [];
-    }
     if (userId && ip && !blacklisted) {
       _users = processUserEntry(_users, userId, ip);
     }
     return _users;
-  }, [] as IUser[]);
+  }, []);
 
   writeToCSV(users);
 }
@@ -85,7 +85,7 @@ function writeToCSV(users: IUser[]) {
   try {
     const parser = new Parser({ fields, delimiter: ',' });
     const csv = parser.parse(users);
-    writeFile(process.env.CSV_FILE || 'users.csv', csv, _err => {
+    writeFile(process.env.CSV_FILE ?? 'users.csv', csv, _err => {
       if (_err) {
         throw _err;
       }

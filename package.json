@@ -21,16 +21,17 @@
     "json2csv": "^5.0.1"
   },
   "devDependencies": {
-    "@types/json2csv": "^5.0.3",
+    "@eslint/js": "^9.10.0",
+    "@types/eslint__js": "^8.42.3",
+    "@types/json2csv": "^5.0.7",
     "@types/node": "^20.16.5",
-    "@typescript-eslint/eslint-plugin": "^6.4.0",
-    "@typescript-eslint/parser": "^6.4.0",
-    "eslint": "^8.47.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "prettier": "^3.0.2",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3",
     "standard-version": "^9.5.0",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.1.6"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.4.0"
   },
   "license": "MIT",
   "repository": "timbru31/spigot-anti-piracy-csv-exporter",
